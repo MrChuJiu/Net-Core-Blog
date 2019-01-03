@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core.Blog</name>
+    </assembly>
+    <members>
+        <member name="M:Core.Blog.AutoHelper.OverWrite.JwtHelper.IssueJWT(Core.Blog.AutoHelper.OverWrite.TokenModelJWT)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Blog.AutoHelper.OverWrite.JwtHelper.SerializeJWT(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Blog.AutoHelper.OverWrite.TokenModelJWT">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:Core.Blog.AutoHelper.OverWrite.TokenModelJWT.id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Core.Blog.AutoHelper.OverWrite.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Core.Blog.AutoHelper.OverWrite.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="T:Core.Blog.AutoHelper.OverWrite.JwtTokenAuth">
+            <summary>
+            认证
+            </summary>
+        </member>
+        <member name="F:Core.Blog.AutoHelper.OverWrite.JwtTokenAuth._next">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Blog.AutoHelper.OverWrite.JwtTokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:Core.Blog.AutoHelper.OverWrite.JwtTokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Core.Blog.Common.Encryption.MD5Hash(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Core.Blog.Controllers.LoginController.Login(Core.Blog.Application.Dtos.UserLoginDto)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Blog.Controllers.LoginController.Register(Core.Blog.Application.Dtos.UserRegisterDto)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Blog.Controllers.LoginController.Initialize">
+            <summary>
+            初始化用户信息
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Blog.Core.Models.AdvertisementInfo">
+            <summary>
+            Banner 轮播图
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.AdvertisementInfo.ID">
+            <summary>
+            分类ID
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.AdvertisementInfo.Createdate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.AdvertisementInfo.ImgUrl">
+            <summary>
+            广告图片
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.AdvertisementInfo.Title">
+            <summary>
+            广告标题
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.AdvertisementInfo.Url">
+            <summary>
+            广告链接
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.AdvertisementInfo.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Core.Blog.Core.Models.ArticleCommentsInfo">
+            <summary>
+            文章评论
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.PostsID">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.BlogPostsInfo">
+            <summary>
+            文章实体
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.PID">
+            <summary>
+            评论父ID
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.Content">
+            <summary>
+            评论内容
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.UserID">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.ArticleCommentsInfo.UserInfo">
+            <summary>
+            创建人实体
+            </summary>
+        </member>
+        <member name="T:Core.Blog.Core.Models.BlogPostsInfo">
+            <summary>
+            文章
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.TechnologyClassifyInfo">
+            <summary>
+            技术分类
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.KeyWords">
+            <summary>
+            关键词
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.Describe">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.Content">
+            <summary>
+            主要内容
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.ArticleComments">
+            <summary>
+            评论
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.Heat">
+            <summary>
+            热度 （被收藏数）
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.UserID">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.BlogPostsInfo.UserInfo">
+            <summary>
+            创建人实体
+            </summary>
+        </member>
+        <member name="T:Core.Blog.Core.Models.TechnologyClassifyInfo">
+            <summary>
+            技术分类
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.TechnologyClassifyInfo.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.TechnologyClassifyInfo.PID">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.TechnologyClassifyInfo.Name">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="T:Core.Blog.Core.Models.UserCollectInfo">
+            <summary>
+            收藏表
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserCollectInfo.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserCollectInfo.UserID">
+            <summary>
+            收藏人ID
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserCollectInfo.UserInfo">
+            <summary>
+            收藏人实体
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserCollectInfo.CollID">
+            <summary>
+            收藏ID
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserCollectInfo.CollType">
+            <summary>
+            收藏类型 0、用户  1、文章
+            </summary>
+        </member>
+        <member name="T:Core.Blog.Core.Models.UserInfo">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.PassWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.PassKey">
+            <summary>
+            加密Key
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.BlogUrl">
+            <summary>
+            其他博客链接
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.LoveSentence">
+            <summary>
+            喜欢的一句话
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.HeadUrl">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.LastErrTime">
+            <summary>
+            上次登录时间
+            </summary>
+        </member>
+        <member name="P:Core.Blog.Core.Models.UserInfo.Role">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+    </members>
+</doc>
